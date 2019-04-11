@@ -1,0 +1,6 @@
+{
+  "appId": "com.ionicframework.csdemocap",
+  "appName": "CS Demo Cap",
+  "bundledWebRuntime": false,
+  "webDir": "www"
+}

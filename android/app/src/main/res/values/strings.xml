@@ -1,0 +1,8 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">CS Demo Cap</string>
+    <string name="title_activity_main">CS Demo Cap</string>
+    <string name="package_name">com.ionicframework.csdemocap</string>
+    <string name="fileprovider_authority">com.ionicframework.csdemocap.fileprovider</string>
+    <string name="custom_url_scheme">com.ionicframework.csdemocap</string>
+</resources>
