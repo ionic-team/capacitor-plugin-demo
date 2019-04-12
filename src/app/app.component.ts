@@ -9,9 +9,9 @@ import { Platform } from '@ionic/angular';
 export class AppComponent {
   public appPages = [
     {
-      title: 'Home',
-      url: '/home',
-      icon: 'home'
+      title: 'Modals',
+      url: '/modals',
+      icon: 'albums'
     },
     {
       title: 'List',
