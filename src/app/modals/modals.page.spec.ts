@@ -7,10 +7,10 @@ import { ModalsPage } from './modals.page';
 describe('ModalsPage', () => {
   let component: ModalsPage;
   let fixture: ComponentFixture<ModalsPage>;
-  let originalModals;
+  let originalModalsPlugin;
 
   beforeEach(async(() => {
-    originalModals = Plugins.Modals;
+    originalModalsPlugin = Plugins.Modals;
     Plugins.Modals = jasmine.createSpyObj('Modals', {
       alert: Promise.resolve(),
       confirm: Promise.resolve({ value: false }),
@@ -30,7 +30,7 @@ describe('ModalsPage', () => {
   });
 
   afterEach(() => {
-    Plugins.Modals = originalModals;
+    Plugins.Modals = originalModalsPlugin;
   });
 
   it('should create', () => {

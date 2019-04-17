@@ -14,9 +14,9 @@ export class AppComponent {
       icon: 'albums'
     },
     {
-      title: 'List',
-      url: '/list',
-      icon: 'list'
+      title: 'Toast',
+      url: '/toast',
+      icon: 'information-circle'
     }
   ];
 

@@ -12,8 +12,8 @@ const routes: Routes = [
     loadChildren: './modals/modals.module#ModalsPageModule'
   },
   {
-    path: 'list',
-    loadChildren: './list/list.module#ListPageModule'
+    path: 'toast',
+    loadChildren: './toast/toast.module#ToastPageModule'
   }
 ];
 
