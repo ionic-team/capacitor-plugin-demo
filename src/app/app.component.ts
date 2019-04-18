@@ -9,6 +9,11 @@ import { Platform } from '@ionic/angular';
 export class AppComponent {
   public appPages = [
     {
+      title: 'Device Info',
+      url: '/device-info',
+      icon: 'information-circle'
+    },
+    {
       title: 'Modals',
       url: '/modals',
       icon: 'albums'
@@ -16,7 +21,7 @@ export class AppComponent {
     {
       title: 'Toast',
       url: '/toast',
-      icon: 'information-circle'
+      icon: 'square'
     }
   ];
 
@@ -30,9 +35,9 @@ export class AppComponent {
     const { SplashScreen, StatusBar } = Plugins;
     try {
       await SplashScreen.hide();
-      await StatusBar.setStyle({ style: StatusBarStyle.Dark });
+      await StatusBar.setStyle({ style: StatusBarStyle.Light });
       if (this.platform.is('android')) {
-        StatusBar.setBackgroundColor({ color: '#963232' });
+        StatusBar.setBackgroundColor({ color: '#CDCDCD' });
       }
     } catch (err) {
       console.log('This is normal in a browser', err);

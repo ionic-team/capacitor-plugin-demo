@@ -4,7 +4,7 @@ import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
 const routes: Routes = [
   {
     path: '',
-    redirectTo: 'modals',
+    redirectTo: 'device-info',
     pathMatch: 'full'
   },
   {
@@ -14,6 +14,10 @@ const routes: Routes = [
   {
     path: 'toast',
     loadChildren: './toast/toast.module#ToastPageModule'
+  },
+  {
+    path: 'device-info',
+    loadChildren: './device-info/device-info.module#DeviceInfoPageModule'
   }
 ];
 

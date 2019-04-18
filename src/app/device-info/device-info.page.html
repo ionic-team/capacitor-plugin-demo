@@ -1,0 +1,88 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Device Information</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list>
+    <ion-item>
+      <ion-label>
+        <div class="key">Language Code</div>
+        <div class="value">{{ lang?.value }}</div>
+      </ion-label>
+    </ion-item>
+    <ion-item *ngIf="info && info.appVersion">
+      <ion-label>
+        <div class="key">Application Version</div>
+        <div class="value">{{ info.appVersion }}</div>
+      </ion-label>
+    </ion-item>
+    <ion-item *ngIf="info && info.batteryLevel">
+      <ion-label>
+        <div class="key">Battery Level</div>
+        <div class="value">{{ info.batteryLevel | percent }}</div>
+      </ion-label>
+    </ion-item>
+    <ion-item *ngIf="info && info.diskFree">
+      <ion-label>
+        <div class="key">Disk Free</div>
+        <div class="value">{{ info.diskFree | number }}</div>
+      </ion-label>
+    </ion-item>
+    <ion-item *ngIf="info && info.diskTotal">
+      <ion-label>
+        <div class="key">Disk Total</div>
+        <div class="value">{{ info.diskTotal | number }}</div>
+      </ion-label>
+    </ion-item>
+    <ion-item *ngIf="info && info.isCharging">
+      <ion-label>
+        <div class="key">Is Charging</div>
+        <div class="value">{{ info.isCharging }}</div>
+      </ion-label>
+    </ion-item>
+    <ion-item *ngIf="info && info.isVirtual">
+      <ion-label>
+        <div class="key">Is Virtual</div>
+        <div class="value">{{ info.isVirtual }}</div>
+      </ion-label>
+    </ion-item>
+    <ion-item *ngIf="info && info.manufacturer">
+      <ion-label>
+        <div class="key">Manufacturer</div>
+        <div class="value">{{ info.manufacturer }}</div>
+      </ion-label>
+    </ion-item>
+    <ion-item *ngIf="info && info.model">
+      <ion-label>
+        <div class="key">Model</div>
+        <div class="value">{{ info.model }}</div>
+      </ion-label>
+    </ion-item>
+    <ion-item *ngIf="info && info.memUsed">
+      <ion-label>
+        <div class="key">Memory Used</div>
+        <div class="value">{{ info.memUsed | number }}</div>
+      </ion-label>
+    </ion-item>
+    <ion-item *ngIf="info && info.osVersion">
+      <ion-label>
+        <div class="key">OS Version</div>
+        <div class="value">{{ info.osVersion }}</div>
+      </ion-label>
+    </ion-item>
+    <ion-item *ngIf="info && info.platform">
+      <ion-label>
+        <div class="key">Platform</div>
+        <div class="value">{{ info.platform }}</div>
+      </ion-label>
+    </ion-item>
+    <ion-item *ngIf="info && info.uuid">
+      <ion-label>
+        <div class="key">UUID</div>
+        <div class="value">{{ info.uuid }}</div>
+      </ion-label>
+    </ion-item>
+  </ion-list>
+</ion-content>

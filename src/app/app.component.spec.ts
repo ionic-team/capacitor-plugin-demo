@@ -45,7 +45,7 @@ describe('AppComponent', () => {
     expect(Plugins.SplashScreen.hide).toHaveBeenCalledTimes(1);
     expect(Plugins.StatusBar.setStyle).toHaveBeenCalledTimes(1);
     expect(Plugins.StatusBar.setStyle).toHaveBeenCalledWith({
-      style: StatusBarStyle.Dark
+      style: StatusBarStyle.Light
     });
     expect(Plugins.StatusBar.setBackgroundColor).not.toHaveBeenCalled();
   }));
@@ -56,7 +56,7 @@ describe('AppComponent', () => {
     TestBed.createComponent(AppComponent);
     tick();
     expect(Plugins.StatusBar.setBackgroundColor).toHaveBeenCalledTimes(1);
-    expect(Plugins.StatusBar.setBackgroundColor).toHaveBeenCalledWith({ color: '#963232' });
+    expect(Plugins.StatusBar.setBackgroundColor).toHaveBeenCalledWith({ color: '#CDCDCD' });
   }));
 
   it('should have menu labels', async () => {
@@ -64,9 +64,10 @@ describe('AppComponent', () => {
     await fixture.detectChanges();
     const app = fixture.nativeElement;
     const menuItems = app.querySelectorAll('ion-label');
-    expect(menuItems.length).toEqual(2);
-    expect(menuItems[0].textContent).toContain('Modals');
-    expect(menuItems[1].textContent).toContain('Toast');
+    expect(menuItems.length).toEqual(3);
+    expect(menuItems[0].textContent).toContain('Device Info');
+    expect(menuItems[1].textContent).toContain('Modals');
+    expect(menuItems[2].textContent).toContain('Toast');
   });
 
   it('should have urls', async () => {
@@ -74,11 +75,14 @@ describe('AppComponent', () => {
     await fixture.detectChanges();
     const app = fixture.nativeElement;
     const menuItems = app.querySelectorAll('ion-item');
-    expect(menuItems.length).toEqual(2);
+    expect(menuItems.length).toEqual(3);
     expect(menuItems[0].getAttribute('ng-reflect-router-link')).toEqual(
-      '/modals'
+      '/device-info'
     );
     expect(menuItems[1].getAttribute('ng-reflect-router-link')).toEqual(
+      '/modals'
+    );
+    expect(menuItems[2].getAttribute('ng-reflect-router-link')).toEqual(
       '/toast'
     );
   });
