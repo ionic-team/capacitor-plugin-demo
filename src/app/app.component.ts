@@ -27,6 +27,11 @@ export class AppComponent {
       title: 'Sharing',
       url: '/sharing',
       icon: 'share'
+    },
+    {
+      title: 'Motion',
+      url: '/motion',
+      icon: 'walk'
     }
   ];
 

@@ -64,7 +64,7 @@ describe('AppComponent', () => {
     await fixture.detectChanges();
     const app = fixture.nativeElement;
     const menuItems = app.querySelectorAll('ion-label');
-    expect(menuItems.length).toEqual(4);
+    expect(menuItems.length).toEqual(5);
   });
 
   it('has menu labels', async () => {
@@ -76,6 +76,7 @@ describe('AppComponent', () => {
     expect(menuItems[1].textContent).toContain('Modals');
     expect(menuItems[2].textContent).toContain('Toast');
     expect(menuItems[3].textContent).toContain('Sharing');
+    expect(menuItems[4].textContent).toContain('Motion');
   });
 
   it('has menu urls', async () => {
@@ -94,6 +95,9 @@ describe('AppComponent', () => {
     );
     expect(menuItems[3].getAttribute('ng-reflect-router-link')).toEqual(
       '/sharing'
+    );
+    expect(menuItems[4].getAttribute('ng-reflect-router-link')).toEqual(
+      '/motion'
     );
   });
 });

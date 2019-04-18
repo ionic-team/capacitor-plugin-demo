@@ -22,7 +22,8 @@ const routes: Routes = [
   {
     path: 'sharing',
     loadChildren: './sharing/sharing.module#SharingPageModule'
-  }
+  },
+  { path: 'motion', loadChildren: './motion/motion.module#MotionPageModule' }
 ];
 
 @NgModule({
