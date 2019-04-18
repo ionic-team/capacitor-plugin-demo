@@ -22,6 +22,11 @@ export class AppComponent {
       title: 'Toast',
       url: '/toast',
       icon: 'square'
+    },
+    {
+      title: 'Sharing',
+      url: '/sharing',
+      icon: 'share'
     }
   ];
 

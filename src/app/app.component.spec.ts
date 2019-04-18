@@ -59,23 +59,30 @@ describe('AppComponent', () => {
     expect(Plugins.StatusBar.setBackgroundColor).toHaveBeenCalledWith({ color: '#CDCDCD' });
   }));
 
-  it('should have menu labels', async () => {
+  it('has menu items', async () => {
     const fixture = await TestBed.createComponent(AppComponent);
     await fixture.detectChanges();
     const app = fixture.nativeElement;
     const menuItems = app.querySelectorAll('ion-label');
-    expect(menuItems.length).toEqual(3);
+    expect(menuItems.length).toEqual(4);
+  });
+
+  it('has menu labels', async () => {
+    const fixture = await TestBed.createComponent(AppComponent);
+    await fixture.detectChanges();
+    const app = fixture.nativeElement;
+    const menuItems = app.querySelectorAll('ion-label');
     expect(menuItems[0].textContent).toContain('Device Info');
     expect(menuItems[1].textContent).toContain('Modals');
     expect(menuItems[2].textContent).toContain('Toast');
+    expect(menuItems[3].textContent).toContain('Sharing');
   });
 
-  it('should have urls', async () => {
+  it('has menu urls', async () => {
     const fixture = await TestBed.createComponent(AppComponent);
     await fixture.detectChanges();
     const app = fixture.nativeElement;
     const menuItems = app.querySelectorAll('ion-item');
-    expect(menuItems.length).toEqual(3);
     expect(menuItems[0].getAttribute('ng-reflect-router-link')).toEqual(
       '/device-info'
     );
@@ -84,6 +91,9 @@ describe('AppComponent', () => {
     );
     expect(menuItems[2].getAttribute('ng-reflect-router-link')).toEqual(
       '/toast'
+    );
+    expect(menuItems[3].getAttribute('ng-reflect-router-link')).toEqual(
+      '/sharing'
     );
   });
 });

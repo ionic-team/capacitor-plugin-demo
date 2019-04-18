@@ -18,6 +18,10 @@ const routes: Routes = [
   {
     path: 'device-info',
     loadChildren: './device-info/device-info.module#DeviceInfoPageModule'
+  },
+  {
+    path: 'sharing',
+    loadChildren: './sharing/sharing.module#SharingPageModule'
   }
 ];
 
