@@ -9,3 +9,13 @@
 @import '~@ionic/angular/css/text-alignment.css';
 @import '~@ionic/angular/css/text-transformation.css';
 @import '~@ionic/angular/css/flex-utils.css';
+
+.key {
+  display: inline-block;
+  font-weight: bold;
+  width: 11em;
+}
+
+.value {
+  display: inline-block;
+}

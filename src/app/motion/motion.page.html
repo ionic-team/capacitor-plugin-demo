@@ -7,4 +7,17 @@
   </ion-toolbar>
 </ion-header>
 
-<ion-content> </ion-content>
+<ion-content>
+  <ion-list>
+    <ion-item>
+      <ion-label>
+        <div class="key">Acceleration:</div>
+        <div class="value" *ngIf="acceleration">
+          <span class="point">X: {{ acceleration?.x | number: '1.3' }}</span>
+          <span class="point"> Y: {{ acceleration?.y | number: '1.3' }} </span>
+          <span class="point"> Z: {{ acceleration?.z | number: '1.3' }} </span>
+        </div>
+      </ion-label>
+    </ion-item>
+  </ion-list>
+</ion-content>
