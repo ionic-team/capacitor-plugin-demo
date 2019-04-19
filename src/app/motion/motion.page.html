@@ -9,14 +9,47 @@
 
 <ion-content>
   <ion-list>
+    <ion-list-header>
+      Acceleration
+    </ion-list-header>
     <ion-item>
       <ion-label>
-        <div class="key">Acceleration:</div>
-        <div class="value" *ngIf="acceleration">
-          <span class="point">X: {{ acceleration?.x | number: '1.3' }}</span>
-          <span class="point"> Y: {{ acceleration?.y | number: '1.3' }} </span>
-          <span class="point"> Z: {{ acceleration?.z | number: '1.3' }} </span>
-        </div>
+        <div class="key">X:</div>
+        <div class="value">{{ acceleration?.x | number: '1.3' }}</div>
+      </ion-label>
+    </ion-item>
+    <ion-item>
+      <ion-label>
+        <div class="key">Y:</div>
+        <div class="value">{{ acceleration?.y | number: '1.3' }}</div>
+      </ion-label>
+    </ion-item>
+    <ion-item>
+      <ion-label>
+        <div class="key">Z:</div>
+        <div class="value">{{ acceleration?.z | number: '1.3' }}</div>
+      </ion-label>
+    </ion-item>
+
+    <ion-list-header>
+      Acceleration Including Gravity
+    </ion-list-header>
+    <ion-item>
+      <ion-label>
+        <div class="key">X:</div>
+        <div class="value">{{ accelerationIncludingGravity?.x | number: '1.3' }}</div>
+      </ion-label>
+    </ion-item>
+    <ion-item>
+      <ion-label>
+        <div class="key">Y:</div>
+        <div class="value">{{ accelerationIncludingGravity?.y | number: '1.3' }}</div>
+      </ion-label>
+    </ion-item>
+    <ion-item>
+      <ion-label>
+        <div class="key">Z:</div>
+        <div class="value">{{ accelerationIncludingGravity?.z | number: '1.3' }}</div>
       </ion-label>
     </ion-item>
   </ion-list>
