@@ -9,6 +9,13 @@
 
 <ion-content>
   <ion-list>
+    <ion-item>
+      <ion-label>
+        <div class="key">Interval:</div>
+        <div class="value">{{ interval | number: '1.3' }}</div>
+      </ion-label>
+    </ion-item>
+
     <ion-list-header>
       Acceleration
     </ion-list-header>
@@ -50,6 +57,50 @@
       <ion-label>
         <div class="key">Z:</div>
         <div class="value">{{ accelerationIncludingGravity?.z | number: '1.3' }}</div>
+      </ion-label>
+    </ion-item>
+
+    <ion-list-header>
+      Rotation Rate
+    </ion-list-header>
+    <ion-item>
+      <ion-label>
+        <div class="key">Alpha:</div>
+        <div class="value">{{ rotationRate?.alpha | number: '1.3' }}</div>
+      </ion-label>
+    </ion-item>
+    <ion-item>
+      <ion-label>
+        <div class="key">Beta:</div>
+        <div class="value">{{ rotationRate?.beta | number: '1.3' }}</div>
+      </ion-label>
+    </ion-item>
+    <ion-item>
+      <ion-label>
+        <div class="key">Gamma:</div>
+        <div class="value">{{ rotationRate?.gamma | number: '1.3' }}</div>
+      </ion-label>
+    </ion-item>
+
+    <ion-list-header>
+      Orientation
+    </ion-list-header>
+    <ion-item>
+      <ion-label>
+        <div class="key">Alpha:</div>
+        <div class="value">{{ orientation?.alpha | number: '1.3' }}</div>
+      </ion-label>
+    </ion-item>
+    <ion-item>
+      <ion-label>
+        <div class="key">Beta:</div>
+        <div class="value">{{ orientation?.beta | number: '1.3' }}</div>
+      </ion-label>
+    </ion-item>
+    <ion-item>
+      <ion-label>
+        <div class="key">Gamma:</div>
+        <div class="value">{{ orientation?.gamma | number: '1.3' }}</div>
       </ion-label>
     </ion-item>
   </ion-list>

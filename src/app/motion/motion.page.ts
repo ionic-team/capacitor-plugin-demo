@@ -11,7 +11,7 @@ export class MotionPage implements OnDestroy, OnInit {
   accelerationIncludingGravity: { x: number; y: number; z: number };
   interval: number;
   rotationRate: { alpha: number; beta: number; gamma: number };
-  orientaion: { alpha: number; beta: number; gamma: number };
+  orientation: { alpha: number; beta: number; gamma: number };
 
   ngOnInit() {
     Plugins.Motion.addListener('accel', evt => {
@@ -22,7 +22,7 @@ export class MotionPage implements OnDestroy, OnInit {
     });
 
     Plugins.Motion.addListener('orientation', d => {
-      this.orientaion = d;
+      this.orientation = d;
     });
   }
 
