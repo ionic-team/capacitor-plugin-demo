@@ -72,7 +72,7 @@ export class ModalsPage {
     });
     const opt = response.index === 4
       ? {
-          message: 'I will cut you!!',
+          message: 'Grrrrrr!!',
           title: '😾😾😾'
         }
       : {

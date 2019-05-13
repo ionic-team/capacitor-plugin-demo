@@ -9,6 +9,11 @@ import { Platform } from '@ionic/angular';
 export class AppComponent {
   public appPages = [
     {
+      title: 'Camera',
+      url: '/camera',
+      icon: 'camera'
+    },
+    {
       title: 'Device Info',
       url: '/device-info',
       icon: 'information-circle'

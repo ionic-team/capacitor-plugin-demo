@@ -8,7 +8,27 @@
 </ion-header>
 
 <ion-content>
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+        <ion-label>
+          The Device API exposes internal information about the device, such as the model and operating system version, 
+          along with user information such as unique ids.
+        </ion-label>
+      </ion-col>
+      <ion-col>
+        <ion-button href="https://capacitor.ionicframework.com/docs/apis/device">
+          <ion-icon slot="start" name="document"></ion-icon>
+          API Details
+        </ion-button>
+      </ion-col>
+      </ion-row>
+    </ion-grid>
+  
+  <ion-item-divider></ion-item-divider>
+  
   <ion-list>
+    <ion-list-header class="key">DEVICE INFO:</ion-list-header>
     <ion-item>
       <ion-label>
         <div class="key">Language Code</div>

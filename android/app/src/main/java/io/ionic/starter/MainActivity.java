@@ -1,4 +1,4 @@
-package com.ionicframework.csdemocap;
+package io.ionic.starter;
 
 import android.os.Bundle;
 

@@ -1,5 +1,7 @@
 {
   "name": "cs-demo-cap",
-  "integrations": {},
+  "integrations": {
+    "capacitor": {}
+  },
   "type": "angular"
 }

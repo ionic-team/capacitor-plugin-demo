@@ -1,6 +1,7 @@
 {
-  "appId": "com.ionicframework.csdemocap",
-  "appName": "CS Demo Cap",
+  "appId": "io.ionic.starter",
+  "appName": "cs-demo-cap",
   "bundledWebRuntime": false,
-  "webDir": "www"
+  "webDir": "www",
+  "npmClient": "npm"
 }
