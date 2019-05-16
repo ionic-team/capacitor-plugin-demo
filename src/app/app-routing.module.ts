@@ -23,7 +23,8 @@ const routes: Routes = [
     path: 'sharing',
     loadChildren: './sharing/sharing.module#SharingPageModule'
   },
-  { path: 'camera', loadChildren: './camera/camera.module#CameraPageModule' }
+  { path: 'camera', loadChildren: './camera/camera.module#CameraPageModule' },
+  { path: 'accessibility', loadChildren: './accessibility/accessibility.module#AccessibilityPageModule' }
 ];
 
 @NgModule({
