@@ -1,4 +1,4 @@
-package io.ionic.starter;
+package io.ionic.demo.capplugins;
 
 import android.os.Bundle;
 

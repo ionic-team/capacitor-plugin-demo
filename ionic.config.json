@@ -1,5 +1,5 @@
 {
-  "name": "cs-demo-cap",
+  "name": "capacitor-kitchen-sink",
   "integrations": {
     "capacitor": {}
   },

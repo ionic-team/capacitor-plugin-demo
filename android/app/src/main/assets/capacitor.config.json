@@ -1,6 +1,6 @@
 {
-  "appId": "io.ionic.starter",
-  "appName": "cs-demo-cap",
+  "appId": "io.ionic.demo.capplugins",
+  "appName": "Capacitor Kitchen Sink",
   "bundledWebRuntime": false,
   "webDir": "www",
   "npmClient": "npm"
