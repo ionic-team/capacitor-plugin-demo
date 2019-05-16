@@ -1,6 +1,7 @@
 {
-  "appId": "com.ionicframework.csdemocap",
-  "appName": "CS Demo Cap",
+  "appId": "io.ionic.demo.capplugins",
+  "appName": "Capacitor Kitchen Sink",
   "bundledWebRuntime": false,
-  "webDir": "www"
+  "webDir": "www",
+  "npmClient": "npm"
 }

@@ -1,4 +1,4 @@
-package com.ionicframework.csdemocap;
+package io.ionic.demo.capplugins;
 
 import android.os.Bundle;
 

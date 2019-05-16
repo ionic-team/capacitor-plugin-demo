@@ -9,6 +9,41 @@ import { Platform } from '@ionic/angular';
 export class AppComponent {
   public appPages = [
     {
+      title: 'Accessibility',
+      url: '/accessibility',
+      icon: 'camera'
+    },
+    {
+      title: 'App',
+      url: '/app',
+      icon: 'camera'
+    },
+    {
+      title: 'Background Task',
+      url: '/background-task',
+      icon: 'camera'
+    },
+    {
+      title: 'Browser',
+      url: '/browser',
+      icon: 'camera'
+    },
+    {
+      title: 'Camera',
+      url: '/camera',
+      icon: 'camera'
+    },
+    {
+      title: 'Clipboard',
+      url: '/clipboard',
+      icon: 'camera'
+    },
+    {
+      title: 'Console',
+      url: '/console',
+      icon: 'camera'
+    },
+    {
       title: 'Device Info',
       url: '/device-info',
       icon: 'information-circle'
