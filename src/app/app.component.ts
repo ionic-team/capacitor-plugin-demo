@@ -11,22 +11,22 @@ export class AppComponent {
     {
       title: 'Accessibility',
       url: '/accessibility',
-      icon: 'camera'
+      icon: 'mic'
     },
     {
       title: 'App',
       url: '/app',
-      icon: 'camera'
+      icon: 'apps'
     },
     {
       title: 'Background Task',
       url: '/background-task',
-      icon: 'camera'
+      icon: 'cog'
     },
     {
       title: 'Browser',
       url: '/browser',
-      icon: 'camera'
+      icon: 'browsers'
     },
     {
       title: 'Camera',
@@ -36,12 +36,12 @@ export class AppComponent {
     {
       title: 'Clipboard',
       url: '/clipboard',
-      icon: 'camera'
+      icon: 'clipboard'
     },
     {
       title: 'Console',
       url: '/console',
-      icon: 'camera'
+      icon: 'paper'
     },
     {
       title: 'Device Info',
@@ -49,19 +49,74 @@ export class AppComponent {
       icon: 'information-circle'
     },
     {
+      title: 'Filesystem',
+      url: '/filesystem',
+      icon: 'document'
+    },
+    {
+      title: 'Geolocation',
+      url: '/geolocation',
+      icon: 'compass'
+    },
+    {
+      title: 'Haptics',
+      url: '/haptics',
+      icon: 'body'
+    },
+    {
+      title: 'Keyboard',
+      url: '/keyboard',
+      icon: 'key'
+    },
+    {
+      title: 'Local Notifications',
+      url: '/local-notifications',
+      icon: 'notifications'
+    },
+    {
       title: 'Modals',
       url: '/modals',
       icon: 'albums'
     },
     {
+      title: 'Motion',
+      url: '/motion',
+      icon: 'move'
+    },
+    {
+      title: 'Network',
+      url: '/network',
+      icon: 'wifi'
+    },
+    {
+      title: 'Push Notifications',
+      url: '/push-notifications',
+      icon: 'notifications-outline'
+    },
+    {
+      title: 'Share',
+      url: '/sharing',
+      icon: 'share'
+    },
+    {
+      title: 'Splash Screen',
+      url: '/splash-screen',
+      icon: 'phone-portrait'
+    },
+    {
+      title: 'Status Bar',
+      url: '/status-bar',
+      icon: 'funnel'
+    },
+    {
+      title: 'Storage',
+      url: '/storage',
+      icon: 'document'
+    },
+    {
       title: 'Toast',
       url: '/toast',
       icon: 'square'
-    },
-    {
-      title: 'Sharing',
-      url: '/sharing',
-      icon: 'share'
     }
   ];
 
