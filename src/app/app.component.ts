@@ -44,7 +44,7 @@ export class AppComponent {
       icon: 'paper'
     },
     {
-      title: 'Device',
+      title: 'Device Info',
       url: '/device-info',
       icon: 'information-circle'
     },
