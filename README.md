@@ -12,6 +12,8 @@ and Android.
 
 ## Running on the Web
 
+From a Terminal, change directory into this project (`cd capacitor-plugin-demo`) then run the following:
+
 ```bash
 $ npm install
 $ ionic build
