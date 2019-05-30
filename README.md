@@ -4,6 +4,8 @@ An (intentionally) simple Ionic Angular app demonstrating how to use all of the 
 Each plugin page provides a description of the plugin, a link to the Capacitor docs, and example code that runs on the web, iOS, 
 and Android.
 
+Implementation still pending for some of the APIs. Pull requests welcome! Check out the [Project Board](https://github.com/ionic-team/capacitor-plugin-demo/projects/1) - any still in TODO status are fair game!
+
 ## How to Use
 
 * Install Capacitor's [Required Dependencies](https://capacitor.ionicframework.com/docs/getting-started/dependencies).
@@ -41,8 +43,7 @@ for many existing Cordova plugins.
 
 ## [Capacitor Core Plugins](https://capacitor.ionicframework.com/docs/apis)
 
-Implementation still pending for some of these. Pull requests welcome! See [issue list](https://github.com/ionic-team/capacitor-plugin-demo/issues)
-for details.
+Implementation still pending for some of these. Pull requests welcome! Check out the [Project Board](https://github.com/ionic-team/capacitor-plugin-demo/projects/1) - any still in TODO status are fair game!
 
 * Accessibility
 * App
