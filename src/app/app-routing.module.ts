@@ -25,7 +25,22 @@ const routes: Routes = [
   },
   { path: 'camera', loadChildren: './camera/camera.module#CameraPageModule' },
   { path: 'accessibility', loadChildren: './accessibility/accessibility.module#AccessibilityPageModule' },
-  { path: 'network', loadChildren: './network/network.module#NetworkPageModule' }
+  { path: 'network', loadChildren: './network/network.module#NetworkPageModule' },
+  { path: 'app', loadChildren: './app/app.module#AppPageModule' },
+  { path: 'background-task', loadChildren: './background-task/background-task.module#BackgroundTaskPageModule' },
+  { path: 'browser', loadChildren: './browser/browser.module#BrowserPageModule' },
+  { path: 'clipboard', loadChildren: './clipboard/clipboard.module#ClipboardPageModule' },
+  { path: 'console', loadChildren: './console/console.module#ConsolePageModule' },
+  { path: 'filesystem', loadChildren: './filesystem/filesystem.module#FilesystemPageModule' },
+  { path: 'geolocation', loadChildren: './geolocation/geolocation.module#GeolocationPageModule' },
+  { path: 'haptics', loadChildren: './haptics/haptics.module#HapticsPageModule' },
+  { path: 'keyboard', loadChildren: './keyboard/keyboard.module#KeyboardPageModule' },
+  { path: 'local-notifications', loadChildren: './local-notifications/local-notifications.module#LocalNotificationsPageModule' },
+  { path: 'motion', loadChildren: './motion/motion.module#MotionPageModule' },
+  { path: 'push-notifications', loadChildren: './push-notifications/push-notifications.module#PushNotificationsPageModule' },
+  { path: 'splash-screen', loadChildren: './splash-screen/splash-screen.module#SplashScreenPageModule' },
+  { path: 'status-bar', loadChildren: './status-bar/status-bar.module#StatusBarPageModule' },
+  { path: 'storage', loadChildren: './storage/storage.module#StoragePageModule' }
 ];
 
 @NgModule({
