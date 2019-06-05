@@ -1,0 +1,44 @@
+<ion-header>
+  <ion-toolbar [color]="networkStatus && networkStatus.connected ? 'primary' : 'danger'">
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Network</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-grid>
+      <ion-row>
+        <ion-col>
+          <ion-label>
+              The Network API provides events for monitoring network status changes, 
+              along with querying the current state of the network.
+          </ion-label>
+        </ion-col>
+        <ion-col>
+          <ion-button href="https://capacitor.ionicframework.com/docs/apis/network">
+            <ion-icon slot="start" name="document"></ion-icon>
+            API Details
+          </ion-button>
+        </ion-col>
+        </ion-row>
+      </ion-grid>
+    
+  <ion-item-divider></ion-item-divider>
+
+  <h1>Connection status: {{ networkStatus && networkStatus.connected ? "Online" : "Offline"}}</h1>
+  <h2>Connection type: {{ networkStatus && networkStatus.connectionType }}</h2>
+
+  <ion-item-divider></ion-item-divider>
+  <p>
+    The Network toolbar above changes based on the device's network status. To see this yourself:
+  </p>
+
+  <h2>On Desktop:</h2>
+  <p>Open the brower's developer tools, then on the Network tab, toggle the "Offline" checkbox:</p>
+  <img src="assets/api-network-offline.png"  />
+
+  <h2>On Mobile Device:</h2>
+  <p>Disable Wifi or toggle airplane mode then navigate back to this app.</p>
+</ion-content>
