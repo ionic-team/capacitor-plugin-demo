@@ -8,6 +8,8 @@ import { ActionSheet, ActionSheetButtonStyle } from '@capacitor/action-sheet';
 import { Browser } from '@capacitor/browser';
 import { Camera, CameraResultType } from '@capacitor/camera';
 import { Clipboard } from '@capacitor/clipboard';
+import { Device } from '@capacitor/device';
+
 import { useCallback } from 'react';
 
 interface PluginEntry {
@@ -111,13 +113,29 @@ const pluginData = {
       }),
       read: () => Clipboard.read()
     }
+  },
+  device: {
+    name: 'Device',
+    description: 'The Device API exposes internal information about the device, such as the model and operating system version, along with user information such as unique ids.',
+    package: '@capacitor/device',
+    methods: {
+      getId: () => Device.getId(),
+      getInfo: () => Device.getInfo(),
+      getBatteryInfo: () => Device.getBatteryInfo(),
+      getLanguageCode: () => Device.getLanguageCode()
+    }
   }
 } as { [key:string]: PluginEntry };
 
 const PluginDemo = ({ plugin }: { plugin: PluginEntry }) => {
-  const runMethod = useCallback((method) => {
+  const runMethod = useCallback(async (method) => {
     const methodDemo = plugin.methods[method];
-    methodDemo?.();
+    try {
+      const ret = await methodDemo?.();
+      console.log(`[${plugin.name}] ${method}() - `, ret);
+    } catch (e) {
+      console.error(e);
+    }
   }, [plugin]);
 
   return (
