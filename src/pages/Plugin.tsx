@@ -437,7 +437,21 @@ const pluginData = {
     description:
       'The Storage API provides a simple key/value persistent store for lightweight data.',
     package: '@capacitor/motion',
-    methods: {},
+    methods: {
+      set: () =>
+        Storage.set({
+          key: 'name',
+          value: 'Max',
+        }),
+      get: () =>
+        Storage.get({
+          key: 'name',
+        }),
+      remove: () =>
+        Storage.remove({
+          key: 'name',
+        }),
+    },
   },
   'text-zoom': {
     name: 'Text Zoom',
