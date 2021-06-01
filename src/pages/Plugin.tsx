@@ -458,14 +458,26 @@ const pluginData = {
     description:
       'The Text Zoom API provides the ability to change Web View text size for visual accessibility.',
     package: '@capacitor/text-zoom',
-    methods: {},
+    methods: {
+      get: () => TextZoom.get(),
+      getPreferred: () => TextZoom.getPreferred(),
+      set: () =>
+        TextZoom.set({
+          value: 0.75,
+        }),
+    },
   },
   'toast': {
     name: 'Toast',
     description:
       'The Toast API provides a notification pop up for displaying important information to a user. Just like real toast!',
     package: '@capacitor/toast',
-    methods: {},
+    methods: {
+      show: () =>
+        Toast.show({
+          text: 'Hello!',
+        }),
+    },
   },
 } as { [key: string]: PluginEntry };
 
